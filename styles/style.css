@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700&display=swap');
+/* universally set all padding and margin to zero, give a font family of Manrope as all text on this page uses this */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+/* style container holding both header and main */
+.full_container {
+    height: 100vh;
+    width: 78%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* flex both header and the nav*/
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 8%;
+    margin-top: 10px;
+    padding: 8px 0;
+}
+
+/* right side of header holding both text and nav */
+.nav_and_text {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* align the nav items */
+.nav_and_text nav {
+    display: inline-flex;
+    padding-right: 10px;
+    border-right: 1px solid rgba(147, 145, 145, 0.3);
+}
+
+/* remove default link styling */
+.nav_and_text nav a {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration: none;
+    margin: 10px;
+    color: #1E1B1B;
+}
+
+/* container holding telephone icon and texts */
+.right {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+/* spacing for the telephone icon */
+.right_icon {
+    margin-right: 12px;
+}
+
+/* styling the texts */
+/* first text */
+#p1 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: rgba(30, 27, 27, 0.7);
+}
+/* second text */
+#p2 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 31.5px;
+    color: #1E1B1B;
+}
+/* end of header styling */
+
+/* main styling */
+main {
+    height: 92%;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.sub_main {
+    height: 100%;
+    display: flex;
+}
+/* lef_sub_main styling */
+.left_sub_main{
+    width: 50%;
+    height: 100%;
+}
+/* positioning of left items */
+.left_items {
+    padding: 65px;
+    padding-left: 0;
+}
+
+/* top text styling on left_sub_main */
+.left_items h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 60px;
+    letter-spacing: -1.92px;
+    color: #1E1B1B;
+    margin-top: 30px;
+}
+/* button styling */
+.left_items button {
+    background-color: #FF6433;
+    color: #fff;
+    font-size: 16px;
+    padding: 13px 24px;
+    border: 0;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+/* bottom left items containing the clock icon and text */
+.bottom_left {
+    display: flex;
+    margin-top: 40px;
+}
+
+/* clock position */
+.bottom_icon {
+    padding: 10px 0;
+}
+
+/* bottom text */
+.bottom_text {
+    margin-left: 5px;
+}
+/* top bottom text */
+.bottom_text #info {
+    color: #939191;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 24px;
+}
+/* last bottom text */
+.bottom_text #time_info {
+    color: #1E1B1B;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* styling right side with background image */
+.right_sub_main {
+    width: 50%;
+    height: 100%;
+    background: url("/Finsweet/images/Image.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* service image positioning*/
+#service {
+    position: absolute;
+    top: -20px;
+    left: -145px;
+}
+/* rating image positioning */
+#rating {
+    position: absolute;
+    bottom: -40px;
+    right: -120px;
+}
