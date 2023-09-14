@@ -21,6 +21,7 @@ main, .parent {
     width: 100%;
     background-color: #fff;
     position: fixed;
+    box-shadow: 0 0.5px #939191;
     z-index: 3;
 }
 
