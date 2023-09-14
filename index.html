@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charsset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6b3f37694e.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Finsweet</title>
   </head>
   <body>
-    <div class="full_container">
-      <!-- header tag containing nav and logo -->
+    <!-- header tag containing nav and logo -->
+    <div class="head">
       <header>
         <!-- div to contain finsweet logo -->
         <div class="logo">
@@ -26,7 +30,7 @@
           </nav>
 
           <!-- this container houses the last items on the right of the header -->
-          <div class="right">
+          <div class="right_side">
             <!-- a div to contain the telephone icon -->
             <div class="right_icon">
               <img
@@ -44,58 +48,300 @@
         </div>
       </header>
       <!-- end of header tag -->
-
-      <!-- beginning of main tag -->
-      <main>
-        <div class="sub_main">
-          <!-- left part of the main -->
-          <div class="left_sub_main">
-            <!-- container for the left items -->
-            <div class="left_items">
-              <!-- top text -->
-              <h1>Get your vehicle service done online at one place</h1>
-              <!-- button -->
-              <button type="button">Book a service</button>
-
-              <!-- bottom left items -->
-              <div class="bottom_left">
-                <!-- container for clock icon -->
-                <div class="bottom_icon">
-                  <img src="./images/Icon.png" alt="clock icon" width="88%" />
-                </div>
-                <!-- end of clock icon container -->
-
-                <!-- container for bottom texts -->
-                <div class="bottom_text">
-                  <p id="info">We are open</p>
-                  <p id="time_info">Monday to Friday 9:00 AM to 10:00 AM</p>
-                </div>
-                <!-- end of bottom text container -->
-              </div>
-            </div>
-            <!-- end of left items container -->
-          </div>
-          <!-- end of left main  -->
-
-          <!-- right part of the main -->
-          <div class="right_sub_main">
-            <img
-              src="./images/Service.png"
-              alt="service"
-              id="service"
-              width="90%"
-            />
-            <img
-              src="./images/Rating.png"
-              alt="rating"
-              id="rating"
-              width="90%"
-            />
-          </div>
-          <!-- end of right main -->
-        </div>
-      </main>
-      <!-- end of main tag -->
     </div>
+
+    <!-- beginning of main tag -->
+    <main>
+      <div class="sub_main">
+        <!-- left part of the main -->
+        <div class="left_sub_main left">
+          <!-- container for the left items -->
+          <div class="left_items">
+            <!-- top text -->
+            <h1>Get your vehicle service done online at one place</h1>
+            <!-- button -->
+            <button class="btn" type="button">Book a service</button>
+
+            <!-- bottom left items -->
+            <div class="bottom_left">
+              <!-- container for clock icon -->
+              <div class="bottom_icon">
+                <img src="./images/Icon.png" alt="clock icon" width="88%" />
+              </div>
+              <!-- end of clock icon container -->
+
+              <!-- container for bottom texts -->
+              <div class="bottom_text">
+                <p id="info">We are open</p>
+                <p id="time_info">Monday to Friday 9:00 AM to 10:00 AM</p>
+              </div>
+              <!-- end of bottom text container -->
+            </div>
+          </div>
+          <!-- end of left items container -->
+        </div>
+        <!-- end of left main  -->
+
+        <!-- right part of the main -->
+        <div class="right_sub_main right">
+          <img
+            src="./images/Service.png"
+            alt="service"
+            id="service"
+            width="90%"
+          />
+          <img src="./images/Rating.png" alt="rating" id="rating" width="90%" />
+        </div>
+        <!-- end of right main -->
+      </div>
+    </main>
+    <!-- end of main tag -->
+
+    <!-- section one -->
+    <section class="one">
+      <div class="parent">
+        <!-- left side of section 1 -->
+        <div class="left_section_one left">
+          <h2>We are taking car servicing seriously</h2>
+          <div class="icon_and_text">
+            <div class="sec1_icon tools_icon">
+              <img
+                src="./images/tools.svg"
+                alt="a settings icon with a wrench inside"
+                width="20px"
+                height="16px"
+              />
+            </div>
+            <div class="sec1_text">
+              <h3>Convenient service</h3>
+              <p>
+                Through True Rich Attended does no end it his mother since real
+                had half every him.
+              </p>
+            </div>
+          </div>
+          <div class="icon_and_text">
+            <div class="sec1_icon mechanic_icon">
+              <img
+                src="./images/mechanic.svg"
+                alt="a settings icon with a wrench inside"
+                width="20px"
+                height="16px"
+              />
+            </div>
+            <div class="sec1_text">
+              <h3>Expert mechanics</h3>
+              <p>
+                Through True Rich Attended does no end it his mother since real
+                had half every him.
+              </p>
+            </div>
+          </div>
+          <div class="icon_and_text">
+            <div class="sec1_icon currency_icon">
+              <img
+                src="./images/currency.svg"
+                alt="a settings icon with a wrench inside"
+                width="20px"
+                height="16px"
+              />
+            </div>
+            <div class="sec1_text">
+              <h3>Transparent pricing</h3>
+              <p>
+                Through True Rich Attended does no end it his mother since real
+                had half every him.
+              </p>
+            </div>
+          </div>
+
+          <p id="bottom">
+            <a href="about" target="_blank"
+              >Know more about us
+              <img src="./images/Arrow.svg" alt="an arrow icon" width="40px"
+            /></a>
+          </p>
+        </div>
+        <!-- end of section 1 left side -->
+
+        <!-- section 1 right side -->
+        <div class="right_section_one right">
+          <h3>Get a quote for the car service</h3>
+          <div class="inputs">
+            <input type="text" placeholder="Enter your location" />
+            <input type="text" placeholder="Enter your location" />
+            <input type="text" placeholder="Enter your location" />
+            <input type="text" placeholder="Enter your location" />
+          </div>
+
+          <button class="btn" type="button">Get your quote</button>
+        </div>
+        <!-- end of section 1 right side -->
+      </div>
+    </section>
+    <!-- end of section one -->
+
+    <!-- section two -->
+    <section class="two">
+      <div class="parent">
+        <!-- left container -->
+        <div class="left_section_two left">
+          <h2>We follow a clear process to help you out.</h2>
+          <p>
+            Through True Rich Attended does no end it his mother since real had
+            half every him case in packages enquire
+          </p>
+
+          <button class="btn" type="button">Learn more</button>
+        </div>
+        <!-- end of left container -->
+
+        <!-- right container -->
+        <div class="right_section_two right">
+          <!-- sub right section one -->
+          <div class="sub_one subs">
+            <!-- container holding circle, semi-circle and line -->
+            <div class="num_icon_and_line">
+              <div class="num_icon"><p>01</p></div>
+              <div class="faint_circle"></div>
+              <div class="line"></div>
+            </div>
+            <!-- end of circle, semi-circle and line -->
+            <div class="texts">
+              <h3>Get a quote</h3>
+              <p>Through True Rich Attended does no end it his mother since real had half every</p>
+            </div>
+          </div>
+          <!-- end of sub right section one -->
+
+          <!-- sub right section two -->
+          <div class="sub_two subs">
+            <!-- container holding circle, semi-circle and line -->
+            <div class="num_icon_and_line">
+              <div class="num_icon"><p>02</p></div>
+              <div class="faint_circle"></div>
+              <div class="line"></div>
+            </div>
+            <!-- end of circle, semi-circle and line -->
+            <div class="texts">
+              <h3>Book an Appointment</h3>
+              <p>Through True Rich Attended does no end it his mother since real had half every</p>
+            </div>
+          </div>
+          <!-- end of sub right section two -->
+
+          <!-- sub right section three -->
+          <div class="sub_three subs">
+            <!-- container holding circle and semi-circle -->
+            <div class="num_icon_and_line">
+              <div class="num_icon"><p>03</p></div>
+              <div class="faint_circle"></div>
+            </div>
+            <!-- end of circle and semi-circle -->
+            <div class="texts">
+              <h3>Get your Service Done</h3>
+              <p>Through True Rich Attended does no end it his mother since real had half every</p>
+            </div>
+          </div>
+          <!-- end of sub right section three -->
+      </div>
+    </section>
+    <!-- end of section two -->
+
+    <!-- section three -->
+    <section class="three">
+      <!-- parent container -->
+      <div class="parent">
+        <!-- container for top text -->
+        <div class="top">
+          <p>What we Offer</p>
+          <h2>We offer full service auto repair & maintenance</h2>
+        </div>
+
+        <!-- container for grid items -->
+        <div class="bottom_grid">
+          <div class="grid_item" id="diag">
+            <i class="fa-solid fa-car-on"></i>
+            <p>Diagnostics</p>
+          </div>
+          <div class="grid_item" id="engine">
+            <i class="fa-solid fa-wrench"></i>
+            <p>Engine Repair</p>
+          </div>
+          <div class="grid_item" id="wheels">
+            <i class="fa-solid fa-record-vinyl"></i>
+            <p>Wheel Repair</p>
+          </div>
+          <div class="grid_item" id="oil">
+            <i class="fa-solid fa-oil-can"></i>
+            <p>Oil filter</p>
+          </div>
+          <div class="grid_item" id="car">
+            <i class="fa-solid fa-car"></i>
+            <p>Body Work</p>
+          </div>
+          <div class="grid_item" id="battery">
+            <i class="fa-solid fa-car-battery"></i>
+            <p>Batteries</p>
+          </div>
+          <div class="grid_item" id="insure">
+            <i class="fa-solid fa-shield-halved"></i>
+            <p>Insurance Claim</p>
+          </div>
+          <div class="grid_item" id="services">
+            <i class="fa-solid fa-gear"></i>
+            <p>Custom Service</p>
+          </div>
+        </div>
+
+        <!-- link text -->
+        <div class="bottom_link">
+          <p id="bottom">
+            <a href="about" target="_blank"
+              >Learn about services
+              <img src="./images/Arrow.svg" alt="an arrow icon" width="40px"
+            /></a>
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- end of section three -->
+    <section class="four">
+      <div class="cover_one cover">
+        <div class="img_one"></div>
+        <div class="orange">
+          <h3>Get in touch with us for your service related query</h3>
+          <button type="button">Contact Us</button>
+        </div>
+        <div class="img_two"></div>
+      </div>
+      <div class="cover_two cover">
+        <div class="img_one"></div>
+        <div class="orange">
+          <h3>Get in touch with us for your service related query</h3>
+          <button type="button">Contact Us</button>
+        </div>
+        <div class="img_two"></div>
+      </div>
+      <!-- bottom -->
+      <div class="four_bottom">
+        <div class="btm_txt">
+          <h2>20+</h2>
+          <p>Proffesional</p>
+        </div>
+        <div class="btm_txt">
+          <h2>10+</h2>
+          <p>Years Experience</p>
+        </div>
+        <div class="btm_txt">
+          <h2>12K+</h2>
+          <p>Service Closed</p>
+        </div>
+        <div class="btm_txt">
+          <h2>100%</h2>
+          <p>Customer Satisfaction</p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
