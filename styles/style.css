@@ -362,6 +362,8 @@ main {
 
 .three .parent {
     flex-direction: column;
+    height: 125vh;
+    padding: 40px 0;
 }
 
 .three .parent .top {
