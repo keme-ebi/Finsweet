@@ -108,13 +108,13 @@ main {
 }
 /* positioning of left items */
 .left_items {
-    padding: 72px;
+    padding: 60px;
     padding-left: 0;
 }
 
 /* top text styling on left_sub_main */
 .left_items h1 {
-    font-size: 48px;
+    font-size: 50px;
     font-weight: 800;
     line-height: 60px;
     letter-spacing: -1.92px;
@@ -180,14 +180,14 @@ main {
 /* service image positioning*/
 #service {
     position: absolute;
-    top: -20px;
-    left: -150px;
+    top: -10px;
+    left: -135px;
 }
 /* rating image positioning */
 #rating {
     position: absolute;
     bottom: -40px;
-    right: -130px;
+    right: -120px;
 }
 
 /* section one styling */
