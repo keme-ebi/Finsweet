@@ -1152,7 +1152,7 @@ main {
     /* service image positioning*/
     #service {
         top: -15%;
-        left: -20%;
+        left: -19%;
     }
 
     /* rating image positioning */
@@ -1184,12 +1184,13 @@ main {
     /* container holding icons and text for section one */
     .one .left_section_one .mid_con {
         display: flex;
-        padding: 5px;
+        flex-direction: column;
+        padding: 8px;
     }
 
     /* section one left icon styling */
     .one .left_section_one .mid_con .icon_and_text .sec1_icon {
-        margin-top: 3%;
+        margin-top: 0%;
         padding: 0;
         border-radius: 50%;
     }
@@ -1206,15 +1207,16 @@ main {
 
     /* section one left head text inline with icon */
     .one .left_section_one .mid_con .icon_and_text .sec1_text h3 {
-        font-size: 100%;
+        font-size: 110%;
         line-height: 20px;
     }
 
     /* paragraph text under the icon and head text styled together with p tag for left section 2 */
     .one .left_section_one .mid_con .icon_and_text .sec1_text p,
     .two .left_section_two p {
-        font-size: 80%;
+        font-size: 85%;
         line-height: 18px;
+        padding-right: 35px;
     }
 
     /* bottom text acting as a link */
@@ -1225,7 +1227,7 @@ main {
     .parent #bottom a {
         margin-top: 0px;
         font-size: 80%;
-        margin-left: 9%;
+        margin-left: 12%;
     }
 
     .parent #bottom a img {
@@ -1242,6 +1244,7 @@ main {
     /* right styling for section one */
     .one .right_section_one {
         margin: 0;
+        margin-top: 20px;
     }
 
     .one .right_section_one h3 {
