@@ -172,6 +172,7 @@ main {
 /* styling right side with background image */
 .right_sub_main {
     background: url("/Finsweet/images/Image.png");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -206,11 +207,11 @@ main {
     line-height: 70px;
 }
 /* container holding icons and text for section one */
-.one .left_section_one .icon_and_text {
+.one .left_section_one .mid_con .icon_and_text {
     display: flex;
 }
 /* section one left icon styling */
-.one .left_section_one .icon_and_text .sec1_icon {
+.one .left_section_one .mid_con .icon_and_text .sec1_icon {
     margin: auto 0;
     margin-top: 32px;
     padding: 8px;
@@ -218,19 +219,19 @@ main {
     background-color: #fff;
 }
 /* section one left text */
-.one .left_section_one .icon_and_text .sec1_text {
+.one .left_section_one .mid_con .icon_and_text .sec1_text {
     margin-top: 31px;
     margin-left: 17px;
     padding-right: 155px;
 }
 /* section one left head text inline with icon */
-.one .left_section_one .icon_and_text .sec1_text h3 {
+.one .left_section_one .mid_con .icon_and_text .sec1_text h3 {
     font-size: 24px;
     line-height: 36px;
     font-weight: 600;
 }
 /* paragraph text under the icon and head text styled together with p tag for left section 2 */
-.one .left_section_one .icon_and_text .sec1_text p, .two .left_section_two p {
+.one .left_section_one .mid_con .icon_and_text .sec1_text p, .two .left_section_two p {
     font-weight: 600;
     font-size: 14px;
     line-height: 28px;
@@ -453,14 +454,17 @@ main {
 /* background for left top part */
 .cover .img_one {
     background-image: url("../images/car.png");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 20%;
+    width: 50%;
     height: 100%;
+    display: flex;
+    justify-content: flex-end;
 }
 /* middle top part */
-.cover .orange {
-    width: 38%;
+.cover .img_one .orange {
+    width: 63%;
     height: 100%;
     background-color: #FF6433;
     padding: 60px 40px;
@@ -494,9 +498,10 @@ main {
 /* right top part */
 .cover .img_two {
     background-image: url("../images/engine.png");
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 42%;
+    width: 50%;
     height: 100%;
 }
 /* end of right top part */
@@ -529,3 +534,1312 @@ main {
 }
 /* end of bottom text area */
 /* end of section four */
+
+/* media queries */
+/* mobile 1 */
+@media screen and (max-width: 320px) {
+    .head {
+        padding-top: 5%;
+        height: 20%;
+    }
+
+    header {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 60%;
+    }
+
+    .nav_and_text {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav_and_text nav {
+        padding-right: 0;
+        border: none;
+    }
+
+    .nav_and_text nav a {
+        font-size: 75%;
+        margin: 5px;
+    }
+
+    .nav_and_text nav a:hover {
+        font-size: 85%;
+    }
+
+    .right_side {
+        padding-left: 0;
+    }
+
+    .right_icon {
+        margin-right: 0;
+    }
+
+    .right_icon img {
+        width: 55%;
+    }
+
+    #p1 {
+        font-size: 65%;
+        line-height: 15px;
+    }
+
+    /* second text */
+    #p2 {
+        font-size: 75%;
+        line-height: 15px;
+    }
+
+    main,
+    .parent {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .sub_main {
+        flex-direction: column;
+    }
+
+    /* left styling */
+    .left,
+    .right {
+        width: 100%;
+        height: 50%;
+    }
+
+    /* positioning of left items */
+    .left_items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+    }
+
+    /* top text styling on left_sub_main */
+    .left_items h1 {
+        text-align: center;
+        font-size: 75%;
+        line-height: 16px;
+        letter-spacing: 0.5px;
+    }
+
+    .btn {
+        font-size: 65%;
+        padding: 8px 12px;
+        margin-top: 2%;
+    }
+
+    .bottom_left {
+        margin-top: 4%;
+    }
+
+    .bottom_left .bottom_icon {
+        width: 25px;
+        padding-top: 4px;
+    }
+
+    /* top bottom text */
+    .bottom_text #info {
+        font-size: 75%;
+        line-height: 17px;
+    }
+
+    /* last bottom text */
+    .bottom_text #time_info {
+        font-size: 75%;
+    }
+
+    /* styling right side with background image */
+    /* service image positioning*/
+    #service {
+        top: -15%;
+        left: -15%;
+        width: 70%;
+    }
+
+    /* rating image positioning */
+    /* positioned it to the left since the overflow couldn't be hidden */
+    #rating {
+        bottom: -23%;
+        left: -13%;
+        width: 70%;
+    }
+
+    .one .parent {
+        height: 120vh;
+    }
+
+    /* left side of section one */
+    .one .left_section_one {
+        margin: 9% 0;
+        height: 25%;
+        padding-right: 0%;
+    }
+
+    /* head text of left section one styled together with h2 tag for left section two */
+    .one .left_section_one h2,
+    .two .left_section_two h2 {
+        font-size: 18px;
+        line-height: 20px;
+        text-align: center;
+        padding: 0 20%;
+    }
+
+    /* container holding icons and text for section one */
+    .one .left_section_one .mid_con {
+        display: flex;
+        padding: 6px;
+    }
+
+    /* section one left icon styling */
+    .one .left_section_one .mid_con .icon_and_text .sec1_icon {
+        margin-top: 3%;
+        padding: 0;
+        border-radius: 50%;
+    }
+
+    .one .left_section_one .mid_con .icon_and_text .sec1_icon img {
+        width: 13px;
+    }
+
+    /* section one left text */
+    .one .left_section_one .mid_con .icon_and_text .sec1_text {
+        margin-top: 0;
+        margin-left: 5%;
+        padding-right: 0;
+    }
+
+    /* section one left head text inline with icon */
+    .one .left_section_one .mid_con .icon_and_text .sec1_text h3 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    /* paragraph text under the icon and head text styled together with p tag for left section 2 */
+    .one .left_section_one .mid_con .icon_and_text .sec1_text p,
+    .two .left_section_two p {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: 5px;
+    }
+
+    /* bottom text acting as a link */
+    .parent #bottom {
+        margin-top: 0;
+    }
+
+    .parent #bottom a {
+        margin-top: 0px;
+        font-size: 12px;
+        margin-left: 25px;
+    }
+
+    .parent #bottom a img {
+        margin-left: 2%;
+        width: 6%;
+    }
+
+    .parent #bottom a:hover {
+        font-size: 80%;
+    }
+
+    /* end of left styling for section one */
+
+    /* right styling for section one */
+    .one .right_section_one {
+        margin: 0;
+        margin-top: 30px;
+    }
+
+    .one .right_section_one h3 {
+        text-align: center;
+        font-size: 120%;
+        padding: 0 25%;
+    }
+
+    .one .right_section_one .inputs {
+        margin-top: 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .one .right_section_one .inputs input {
+        width: 90%;
+        height: 55px;
+        margin: 2px 0;
+        padding-left: 5%;
+    }
+
+    .one .right_section_one button {
+        margin: 5%;
+        margin-left: 5%;
+    }
+
+    /* end of right styling for section one */
+    /* end of section one styling */
+
+    /* beginning of section two styling */
+    /* section two left container */
+    .two .parent {
+        height: 100vh;
+        flex-direction: column-reverse;
+    }
+
+    .two .left_section_two {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .two .left_section_two h2 {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    .two .left_section_two p {
+        padding: 0 18px;
+        font-size: 14px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .two .left_section_two .btn {
+        margin-top: 12px;
+    }
+
+    /* end of left section two */
+
+    /* section two right container */
+    .two .right_section_two {
+        padding: 12px 8px;
+        height: 68%;
+    }
+
+    .two .right_section_two h3 {
+        font-size: 15px;
+    }
+
+    /* arrangement for the subs of the right section */
+    /* circle holding the number */
+    .num_icon {
+        width: 30px;
+        border-radius: 50%;
+        padding: 5px;
+        margin-bottom: 2px;
+        margin-top: 12px;
+    }
+
+    .num_icon p {
+        font-size: small;
+        text-align: center;
+    }
+
+    /* faint circle on top of the initial circle holding the number */
+    .faint_circle {
+        width: 30px;
+        border-radius: 50%;
+        padding: 15px;
+        top: 32%;
+        left: 3%;
+    }
+
+    /* line design */
+    .line {
+        height: 50%;
+        margin-top: 50%;
+        right: -45%;
+    }
+
+    /* container holding the texts on the right side */
+    .two .right_section_two .texts {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    .two .right_section_two .texts p {
+        font-size: 12px;
+        margin-top: 3px;
+        padding-right: 30px;
+    }
+
+    /* end of right section two */
+
+    /* section three styling */
+    .three .parent {
+        flex-direction: column;
+        height: 95vh;
+        width: 90%;
+        padding: 6% 0;
+    }
+
+    .three .parent .top {
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 3px;
+        padding-top: 5px;
+        align-items: center;
+    }
+
+    .three .parent .top p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .three .parent .top h2 {
+        font-size: 18px;
+        margin: 0 18px;
+    }
+
+    .bottom_grid {
+        display: grid;
+        grid-template-areas:
+            'd e '
+            'w o'
+            'c b'
+            'i s'
+        ;
+        gap: 3px;
+        width: 100%;
+        height: 65%;
+        margin: 0;
+        margin-top: 12px;
+    }
+
+    .bottom_grid .grid_item {
+        font-size: 12px;
+    }
+
+    .bottom_grid .grid_item i {
+        font-size: 130%;
+    }
+
+    .three .parent .bottom_link {
+        margin-bottom: 0;
+        margin: 5% 0;
+        width: 100%;
+    }
+
+    .three .parent .bottom_link #bottom {
+        margin-left: 0;
+        margin-bottom: 3px;
+    }
+    .three .parent .bottom_link #bottom a {
+        font-size: 10px;
+    }
+    .three .parent .bottom_link #bottom a:hover {
+        font-size: 11px;
+        font-weight: 400;
+    }
+
+    /* end of section three styling */
+
+    /* section four styling */
+    .four {
+        height: 75vh;
+    }
+
+    /* cover holding first top part */
+    .cover {
+        width: 100%;
+        height: 60%;
+        flex-direction: column;
+    }
+
+    /* background for left top part */
+    .cover .img_one {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* middle top part */
+    .cover .img_one .orange {
+        width: 50%;
+        height: 100%;
+        background-color: #FF6433;
+        padding: 6% 4%;
+        padding-top: 9%;
+    }
+
+    .cover .orange h3 {
+        font-size: 90%;
+    }
+
+    .cover .orange button {
+        margin-top: 15%;
+        font-size: 50%;
+        padding: 8% 10%;
+        border: 0;
+    }
+
+    .cover .orange button:hover {
+        font-size: 55%;
+    }
+
+    /* end of middle top part */
+
+    /* right top part */
+    .cover .img_two {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* end of right top part */
+
+    /* cover duplicate that'll overlap the first one */
+    .cover_two {
+        margin-top: -77%;
+        margin-left: -3%;
+    }
+
+    /* end of top covers */
+    /* bottom texts area */
+    .four_bottom {
+        display: grid;
+        grid-template-areas:
+            'p s'
+            'y c'
+        ;
+        gap: 3px;
+        margin-top: 14px;
+    }
+
+    .four_bottom .btm_txt {
+        margin: 0;
+        margin-top: 2px;
+        padding: 0 20px;
+    }
+
+    .four_bottom .btm_txt h2 {
+        font-size: 16px;
+    }
+
+    .four_bottom .btm_txt p {
+        font-size: 12px;
+    }
+
+    /* end of bottom text area */
+    /* end of section four */
+}
+
+/* mobile 2 */
+@media screen and (max-width: 430px) and (min-width: 321px) {
+    .head {
+        padding-top: 6%;
+        height: 16%;
+    }
+    header {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo img {
+        width: 60%;
+    }
+    .nav_and_text {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav_and_text nav {
+        padding-right: 0;
+        border: none;
+    }
+    .nav_and_text nav a {
+    font-size: 85%;
+    margin: 6px;
+    }
+    .nav_and_text nav a:hover {
+        font-size: 95%;
+    }
+    .right_side {
+        padding-left: 0;
+    }
+    .right_icon {
+        margin-right: 0;
+    }
+    .right_icon img {
+        width: 65%;
+    }
+    #p1 {
+        font-size: 65%;
+        line-height: 20px;
+    }
+
+    /* second text */
+    #p2 {
+        font-size: 75%;
+        line-height: 15px;
+    }
+
+    main, .parent {
+        width: 100%;
+        flex-direction: column;
+    }
+    .sub_main {
+        flex-direction: column;
+    }
+
+    /* left styling */
+    .left, .right {
+        width: 100%;
+        height: 50%;
+    }
+
+    /* positioning of left items */
+    .left_items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 18%;
+    }
+
+    /* top text styling on left_sub_main */
+    .left_items h1 {
+        text-align: center;
+        font-size: 80%;
+        line-height: 20px;
+        letter-spacing: 0.5px;
+    }
+    .btn {
+        font-size: 65%;
+        padding: 10px 16px;
+        margin-top: 5%;
+    }
+
+    .bottom_left {
+        margin-top: 8%;
+    }
+
+    /* top bottom text */
+    .bottom_text #info {
+        font-size: 80%;
+        line-height: 17px;
+    }
+
+    /* last bottom text */
+    .bottom_text #time_info {
+        font-size: 80%;
+    }
+
+    /* styling right side with background image */
+    /* service image positioning*/
+    #service {
+        top: -15%;
+        left: -20%;
+    }
+
+    /* rating image positioning */
+    /* positioned it to the left since the overflow couldn't be hidden */
+    #rating {
+        bottom: -23%;
+        left: -16%;
+    }
+
+    .one .parent {
+        height: 90vh;
+    }
+    /* left side of section one */
+    .one .left_section_one {
+        margin: 9% 0;
+        height: 32%;
+        padding-right: 0%;
+    }
+
+    /* head text of left section one styled together with h2 tag for left section two */
+    .one .left_section_one h2,
+    .two .left_section_two h2 {
+        font-size: 120%;
+        line-height: 25px;
+        text-align: center;
+        padding: 0 20%;
+    }
+
+    /* container holding icons and text for section one */
+    .one .left_section_one .mid_con {
+        display: flex;
+        padding: 5px;
+    }
+
+    /* section one left icon styling */
+    .one .left_section_one .mid_con .icon_and_text .sec1_icon {
+        margin-top: 3%;
+        padding: 0;
+        border-radius: 50%;
+    }
+    .one .left_section_one .mid_con .icon_and_text .sec1_icon img {
+        width: 15px;
+    }
+
+    /* section one left text */
+    .one .left_section_one .mid_con .icon_and_text .sec1_text {
+        margin-top: 0;
+        margin-left: 5%;
+        padding-right: 0;
+    }
+
+    /* section one left head text inline with icon */
+    .one .left_section_one .mid_con .icon_and_text .sec1_text h3 {
+        font-size: 100%;
+        line-height: 20px;
+    }
+
+    /* paragraph text under the icon and head text styled together with p tag for left section 2 */
+    .one .left_section_one .mid_con .icon_and_text .sec1_text p,
+    .two .left_section_two p {
+        font-size: 80%;
+        line-height: 18px;
+    }
+
+    /* bottom text acting as a link */
+    .parent #bottom {
+        margin-top: 0;
+    }
+
+    .parent #bottom a {
+        margin-top: 0px;
+        font-size: 80%;
+        margin-left: 9%;
+    }
+
+    .parent #bottom a img {
+        margin-left: 2%;
+        width: 6%;
+    }
+
+    .parent #bottom a:hover {
+        font-size: 80%;
+    }
+
+    /* end of left styling for section one */
+
+    /* right styling for section one */
+    .one .right_section_one {
+        margin: 0;
+    }
+
+    .one .right_section_one h3 {
+        text-align: center;
+        font-size: 120%;
+        padding: 0 25%;
+    }
+
+    .one .right_section_one .inputs {
+        margin-top: 6%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .one .right_section_one .inputs input {
+        width: 90%;
+        height: 55px;
+        margin: 2px 0;
+        padding-left: 5%;
+    }
+
+    .one .right_section_one button {
+        margin: 5%;
+        margin-left: 5%;
+    }
+    /* end of right styling for section one */
+    /* end of section one styling */
+
+    /* beginning of section two styling */
+    /* section two left container */
+    .two .parent {
+        height: 85vh;
+        flex-direction: column-reverse;
+    }
+    .two .left_section_two {
+        padding: 0;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .two .left_section_two h2 {
+        font-size: 110%;
+        margin-bottom: 5%;
+    }
+
+    .two .left_section_two p {
+        padding: 0 7%;
+        font-size: 90%;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    .two .left_section_two .btn {
+        margin-top: 8%;
+    }
+    /* end of left section two */
+
+    /* section two right container */
+    .two .right_section_two {
+        padding: 8%;
+        height: 60%;
+    }
+
+    .two .right_section_two h3 {
+        font-size: 120%;
+    }
+
+    /* arrangement for the subs of the right section */
+    /* circle holding the number */
+    .num_icon {
+        width: 12%;
+        border-radius: 50%;
+        padding: 3%;
+        margin-bottom: 2%;
+        margin-top: 5%;
+    }
+
+    .num_icon p {
+        font-size: medium;
+        text-align: center;
+    }
+
+    /* faint circle on top of the initial circle holding the number */
+    .faint_circle {
+        width: 10%;
+        border-radius: 50%;
+        padding: 22px;
+        top: 45%;
+        left: 3%;
+    }
+
+    /* line design */
+    .line {
+        height: 50%;
+        margin-top: 50%;
+        right: -45%;
+    }
+
+    /* container holding the texts on the right side */
+    .two .right_section_two .texts {
+        margin-top: 5%;
+        margin-left: 5%;
+    }
+
+    .two .right_section_two .texts p {
+        font-size: 90%;
+        margin-top: 5%;
+        padding-right: 5%;
+    }
+    /* end of right section two */
+
+    /* section three styling */
+    .three .parent {
+        flex-direction: column;
+        height: 95vh;
+        width: 90%;
+        padding: 6% 0;
+    }
+
+    .three .parent .top {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 3%;
+        padding-top: 5%;
+        align-items: center;
+    }
+
+    .three .parent .top p {
+        font-size: larger;
+        line-height: 30px;
+    }
+
+    .three .parent .top h2 {
+        font-size: 130%;
+        margin: 0 8%;
+    }
+
+    .bottom_grid {
+        display: grid;
+        grid-template-areas:
+            'd e '
+            'w o'
+            'c b'
+            'i s'
+        ;
+        gap: 3px;
+        width: 100%;
+        height: 65%;
+        margin: 0;
+        margin-top: 9%;
+    }
+
+    .bottom_grid .grid_item {
+        font-size: 100%;
+    }
+
+    .bottom_grid .grid_item i {
+        font-size: 130%;
+    }
+
+    .three .parent .bottom_link {
+        margin-bottom: 0;
+        margin: 5% 0;
+        width: 100%;
+    }
+
+    .three .parent .bottom_link #bottom {
+        margin-left: 45%;
+        margin-bottom: 5%;
+    }
+
+    .three .parent .bottom_link #bottom a:hover {
+        font-size: 85%;
+    }
+    /* end of section three styling */
+
+    /* section four styling */
+    .four {
+        height: 60vh;
+        background-color: #E2E6E9;
+    }
+
+    /* cover holding first top part */
+    .cover {
+        width: 100%;
+        height: 70%;
+        flex-direction: column;
+    }
+
+    /* background for left top part */
+    .cover .img_one {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* middle top part */
+    .cover .img_one .orange {
+        width: 50%;
+        height: 100%;
+        background-color: #FF6433;
+        padding: 6% 4%;
+        padding-top: 9%;
+    }
+
+    .cover .orange h3 {
+        font-size: 90%;
+    }
+
+    .cover .orange button {
+        margin-top: 15%;
+        font-size: 50%;
+        padding: 8% 10%;
+        border: 0;
+    }
+
+    .cover .orange button:hover {
+        font-size: 55%;
+    }
+
+    /* end of middle top part */
+
+    /* right top part */
+    .cover .img_two {
+        width: 100%;
+        height: 100%;
+    }
+    /* end of right top part */
+
+    /* cover duplicate that'll overlap the first one */
+    .cover_two {
+        margin-top: -91%;
+        margin-left: -4%;
+    }
+
+    /* end of top covers */
+    /* bottom texts area */
+    .four_bottom {
+        display: grid;
+        grid-template-areas:
+            'p s'
+            'y c'
+        ;
+        gap: 3px;
+        margin-top: 5%;
+    }
+
+    .four_bottom .btm_txt {
+        margin: 0;
+        margin-top: 2%;
+        padding: 0 30px;
+    }
+
+    .four_bottom .btm_txt h2 {
+        font-size: 100%;
+    }
+
+    .four_bottom .btm_txt p {
+        font-size: 80%;
+    }
+
+    /* end of bottom text area */
+    /* end of section four */
+}
+
+/* tab */
+@media screen and (max-width: 834px) and (min-width: 430px) {
+    .head {
+        width: 100%;
+        height: 6%;
+    }
+    header {
+        width: 85%;
+        margin-top: 0;
+        padding: 12px 0;
+    }
+    .logo img{
+        width: 90%;
+    }
+    .nav_and_text nav a {
+        font-size: 90%;
+        line-height: 10px;
+        margin: 7px;
+        padding-right: 0;
+    }
+    .nav_and_text nav a:hover{
+        font-size: 95%;
+    }
+    .right_side {
+        margin: 0;
+        padding-bottom: 6%;
+    }
+    .right_icon img {
+        width: 70%;
+    }
+    #p1, #p2 {
+        font-size: 80%;
+        line-height: 15px;
+    }
+    main, .parent {
+        height: 50vh;
+        width: 85%;
+    }
+
+    main {
+        padding: 7% 0;
+    }
+    .sub_main {
+        width: 100%;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+    .left_items {
+        padding: 50px;
+        padding-left: 0;
+    }
+    
+    /* top text styling on left_sub_main */
+    .left_items h1 {
+        font-size: 28px;
+        line-height: 40px;
+        margin-top: 10px;
+    }
+        
+    /* button styling (this is a general button styling) */
+    .btn {
+                font-size: 14px;
+                padding: 10px 20px;
+                border-radius: 10px;
+                margin-top: 20px;
+    }
+        
+    /* bottom left items containing the clock icon and text */
+    .bottom_left {
+                margin-top: 30px;
+    }
+        
+    /* clock position */
+    .bottom_icon {
+                padding: 5px 0;
+    }
+
+    /* top bottom text */
+    .bottom_text #info, .bottom_text #time_info {
+                font-size: 12px;
+    }
+
+    /* service image positioning*/
+    #service {
+        left: -83px;
+    }
+
+    /* rating image positioning */
+    #rating {
+        right: -63px;
+    }
+
+    .one .left_section_one {
+        margin: 40px 0;
+        padding-right: 10px;
+    }
+    /* head text of left section one styled together with h2 tag for left section two */
+    .one .left_section_one h2, .two .left_section_two h2{
+        font-size: 29px;
+        line-height: 30px;
+    }
+    /* container holding icons and text for section one */
+    /* section one left icon styling */
+    .one .left_section_one .mid_con .icon_and_text .sec1_icon {
+        margin-top: 30px;
+        padding: 4px;
+    }
+    /* section one left text */
+    .one .left_section_one .mid_con .icon_and_text .sec1_text {
+        margin-top: 30px;
+        margin-left: 10px;
+        padding-right: 30px;
+    }
+    /* section one left head text inline with icon */
+    .one .left_section_one .mid_con .icon_and_text .sec1_text h3 {
+        font-size: 22px;
+        line-height: 23px;
+    }
+    /* paragraph text under the icon and head text styled together with p tag for left section 2 */
+    .one .left_section_one .mid_con .icon_and_text .sec1_text p, .two .left_section_two p {
+        font-size: 15px;
+        line-height: 18px;
+    }
+    /* bottom text acting as a link */
+    .parent #bottom {
+        margin-top: 10px;
+    }
+    .parent #bottom a {
+        font-size: 14px;
+        margin-top: 20px;
+        margin-left: 37px;
+        transition: all ease-in .2s;
+    }
+    .parent #bottom a img {
+        margin-left: 12px;
+        width: 25px;
+    }
+    .parent #bottom a:hover {
+        font-size: 14px;
+    }
+    /* right styling for section one */
+    .one .right_section_one {
+        margin: 40px 0;
+    }
+
+    .one .right_section_one h3 {
+        font-size: 26px;
+        padding-right: 10px;
+    }
+
+    .one .right_section_one .inputs {
+        margin-top: 20px;
+    }
+
+    .one .right_section_one .inputs input {
+        width: 100%;
+        height: 60px;
+        margin: 1.8px 0;
+        padding-left: 15px;
+    }
+
+    /* section two */
+    .two .left_section_two {
+        padding-top: 150px;
+    }
+
+    .two .left_section_two p {
+        padding-right: 50px;
+        margin-top: 10px;
+    }
+
+    .two .left_section_two .btn {
+        margin-top: 15px;
+    }
+
+    .two .right_section_two {
+        padding: 70px 0;
+    }
+
+    .two .right_section_two h3 {
+        font-size: 24px;
+    }
+
+    /* arrangement for the subs of the right section */
+    /* circle holding the number */
+    .num_icon {
+        width: 35px;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .num_icon p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /* faint circle on top of the initial circle holding the number */
+    .faint_circle {
+        width: 25px;
+        padding: 10px;
+        top: 47px;
+        left: 5px;
+    }
+
+    /* line design */
+    .line {
+        height: 40px;
+        margin-top: 50px;
+        right: -15px;
+    }
+
+    /* container holding the texts on the right side */
+    .two .right_section_two .texts {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+
+    .two .right_section_two .texts p {
+        font-size: 16px;
+        margin-top: 10px;
+        padding-right: 30px;
+    }
+
+    /* section three */
+    .three .parent {
+        height: 60vh;
+        padding: 20px 0;
+    }
+
+    .three .parent .top {
+        width: 70%;
+        padding-top: 20px;
+    }
+
+    .three .parent .top p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .three .parent .top h2 {
+        font-size: 30px;
+        margin: 0 20px;
+    }
+
+    .bottom_grid {
+        width: 100%;
+        height: 50%;
+        margin: 5px 0;
+        margin-top: 35px;
+    }
+
+    .bottom_grid .grid_item {
+        font-size: 19px;
+    }
+
+    .bottom_grid .grid_item i {
+        font-size: 32px;
+    }
+
+    .three .parent .bottom_link {
+        margin-bottom: 10px;
+    }
+
+    .three .parent .bottom_link #bottom {
+        margin-left: 480px;
+        margin-bottom: 10px;
+    }
+
+    .three .parent .bottom_link #bottom a:hover {
+        font-size: 14px;
+    }
+
+    /* section four */
+    .four {
+        height: 40vh;
+    }
+
+    /* cover holding first top part */
+    .cover {
+        height: 65%;
+    }
+
+    /* background for left top part */
+
+    /* middle top part */
+    .cover .img_one .orange {
+        width: 62%;
+        padding: 20px 20px;
+        padding-top: 70px;
+    }
+
+    .cover .orange h3 {
+        font-size: 20px;
+    }
+
+    .cover .orange button {
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+    }
+
+    .cover .orange button:hover {
+        font-size: 15px;
+    }
+    /* end of right top part */
+
+    /* cover duplicate that'll overlap the first one */
+    .cover_two {
+        margin-top: -300px;
+        margin-left: -12px;
+    }
+
+    /* end of top covers */
+
+    /* bottom texts area */
+    .four_bottom .btm_txt {
+        margin: 50px 0;
+        padding: 0 10px;
+    }
+
+    .four_bottom .btm_txt h2 {
+        font-size: 28px;
+    }
+
+    .four_bottom .btm_txt p {
+        font-size: 18px;
+    }
+}
